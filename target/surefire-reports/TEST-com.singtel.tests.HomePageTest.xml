@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="20" failures="0" name="com.singtel.tests.HomePageTest" time="1.682" errors="20" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\bin"/>
+    <property name="java.vm.version" value="25.291-b10"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\hites\eclipse-workspace\todoList"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\hites\eclipse-workspace\todoList"/>
+    <property name="java.runtime.version" value="1.8.0_291-b10"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_291\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\hites\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\apache-maven-3.8.3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_291\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Volta\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_291\bin;C:\Program Files\nodejs\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\PuTTY\;C:\apache-maven-3.8.3\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\hites\AppData\Local\Volta\bin;C:\Users\hites\AppData\Local\Microsoft\WindowsApps;C:\Users\hites\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="C:\apache-maven-3.8.3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\apache-maven-3.8.3\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\hites"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="hites"/>
+    <property name="java.class.path" value="C:\apache-maven-3.8.3\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_291\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_291"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_291\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_291\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\apache-maven-3.8.3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Validate todo list application" name="As toDoMVC user able to add to item  to the list" time="0.627">
+    <error message="The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+</error>
+    <system-out>
+@validateAdd
+Scenario: As toDoMVC user able to add to item  to the list &amp;#27;[90m# src/test/resources/com/automatedtest/homePage.feature:4&amp;#27;[0m
+      &amp;#27;[31mjava.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+&amp;#27;[0m
+  &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI navigates to HomePage&amp;#27;[0m                            &amp;#27;[90m# com.singtel.steps.HomePageSteps.a_todoMVC_user_navigates_to_HomePage()&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI add &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;running&quot;&amp;#27;[0m&amp;#27;[36m todo item to list&amp;#27;[0m                   &amp;#27;[90m# com.singtel.steps.HomePageSteps.i_add_todo_item_to_list(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mtodo list is displayed with following&amp;#27;[0m               &amp;#27;[90m# com.singtel.steps.HomePageSteps.todo_list_is_displayed_with_following(io.cucumber.datatable.DataTable)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mtodo list is displayed with &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m1&amp;#27;[0m&amp;#27;[36m items&amp;#27;[0m                  &amp;#27;[90m# com.singtel.steps.HomePageSteps.search_bar_is_displayed_items_in_list(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mtodo item list is displayed as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;1 item left&quot;&amp;#27;[0m         &amp;#27;[90m# com.singtel.steps.HomePageSteps.todo_item_list_is_displayed_as(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+&amp;#27;[0m
+</system-out>
+    <system-err>Aug 17, 2022 8:01:32 PM io.cucumber.junit.Cucumber &lt;init&gt;
+WARNING: By default Cucumber is running in --non-strict mode.
+This default will change to --strict and --non-strict will be removed.
+You can use --strict or @CucumberOptions(strict = true) to suppress this warning
+</system-err>
+  </testcase>
+  <testcase classname="Validate todo list application" name="As toDoMVC user able to add to item  to the list" time="0.629">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+</error>
+  </testcase>
+  <testcase classname="Validate todo list application" name="As toDoMVC user able to add and remove to items to the list" time="0.025">
+    <error message="The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+</error>
+    <system-out>
+@validateRemove
+Scenario: As toDoMVC user able to add and remove to items to the list &amp;#27;[90m# src/test/resources/com/automatedtest/homePage.feature:13&amp;#27;[0m
+      &amp;#27;[31mjava.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+&amp;#27;[0m
+  &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI navigates to HomePage&amp;#27;[0m                                       &amp;#27;[90m# com.singtel.steps.HomePageSteps.a_todoMVC_user_navigates_to_HomePage()&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI add todo items to list&amp;#27;[0m                                       &amp;#27;[90m# com.singtel.steps.HomePageSteps.user_add_todo_items_to_list(io.cucumber.datatable.DataTable)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI remove following items from list&amp;#27;[0m                              &amp;#27;[90m# com.singtel.steps.HomePageSteps.i_remove_following_items_from_list(io.cucumber.datatable.DataTable)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mtodo list is displayed with following&amp;#27;[0m                          &amp;#27;[90m# com.singtel.steps.HomePageSteps.todo_list_is_displayed_with_following(io.cucumber.datatable.DataTable)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mtodo list is displayed with &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2&amp;#27;[0m&amp;#27;[36m items&amp;#27;[0m                             &amp;#27;[90m# com.singtel.steps.HomePageSteps.search_bar_is_displayed_items_in_list(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mtodo item list is displayed as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;2 items left&quot;&amp;#27;[0m                   &amp;#27;[90m# com.singtel.steps.HomePageSteps.todo_item_list_is_displayed_as(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Validate todo list application" name="As toDoMVC user able to add and remove to items to the list" time="0.025">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+</error>
+  </testcase>
+  <testcase classname="Validate todo list application" name="As toDoMVC user able to add to items to the list and mark completed" time="0.034">
+    <error message="The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+</error>
+    <system-out>
+@validateCheckDoneItems
+Scenario: As toDoMVC user able to add to items to the list and mark completed &amp;#27;[90m# src/test/resources/com/automatedtest/homePage.feature:25&amp;#27;[0m
+      &amp;#27;[31mjava.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+&amp;#27;[0m
+  &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI navigates to HomePage&amp;#27;[0m                                               &amp;#27;[90m# com.singtel.steps.HomePageSteps.a_todoMVC_user_navigates_to_HomePage()&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI add todo items to list&amp;#27;[0m                                               &amp;#27;[90m# com.singtel.steps.HomePageSteps.user_add_todo_items_to_list(io.cucumber.datatable.DataTable)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI mark as completed with following in todo list items&amp;#27;[0m                   &amp;#27;[90m# com.singtel.steps.HomePageSteps.i_mark_as_completed_with_following_in_todo_list_items(io.cucumber.datatable.DataTable)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mtodo list is displayed with following&amp;#27;[0m                                  &amp;#27;[90m# com.singtel.steps.HomePageSteps.todo_list_is_displayed_with_following(io.cucumber.datatable.DataTable)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36msearch bar displayed done items in list&amp;#27;[0m                                 &amp;#27;[90m# com.singtel.steps.HomePageSteps.search_bar_displayed_done_items_in_list(io.cucumber.datatable.DataTable)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mtodo list is displayed with &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2&amp;#27;[0m&amp;#27;[36m items&amp;#27;[0m                                     &amp;#27;[90m# com.singtel.steps.HomePageSteps.search_bar_is_displayed_items_in_list(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mtodo item list is displayed as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;2 items left&quot;&amp;#27;[0m                           &amp;#27;[90m# com.singtel.steps.HomePageSteps.todo_item_list_is_displayed_as(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Validate todo list application" name="As toDoMVC user able to add to items to the list and mark completed" time="0.034">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+</error>
+  </testcase>
+  <testcase classname="Validate todo list application" name="As todoMVC user add 6 todo items" time="0.029">
+    <error message="The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+</error>
+    <system-out>
+@validateToDoAddCount
+Scenario Outline: As todoMVC user add 6 todo items           &amp;#27;[90m# src/test/resources/com/automatedtest/homePage.feature:48&amp;#27;[0m
+      &amp;#27;[31mjava.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+&amp;#27;[0m
+  &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI navigates to HomePage&amp;#27;[0m                              &amp;#27;[90m# com.singtel.steps.HomePageSteps.a_todoMVC_user_navigates_to_HomePage()&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI add &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m6&amp;#27;[0m&amp;#27;[36m todo items to list&amp;#27;[0m                            &amp;#27;[90m# com.singtel.steps.HomePageSteps.user_add_todo_items_to_list(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mtodo list is displayed with &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m6&amp;#27;[0m&amp;#27;[36m items&amp;#27;[0m                   &amp;#27;[90m# com.singtel.steps.HomePageSteps.search_bar_is_displayed_items_in_list(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click on All filter and validate count of items as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m6&amp;#27;[0m &amp;#27;[90m# com.singtel.steps.HomePageSteps.i_click_on_All_filter_and_validate_count_of_items_as(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click on Active and validate count of items as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m6&amp;#27;[0m     &amp;#27;[90m# com.singtel.steps.HomePageSteps.i_click_on_Active_and_validate_count_of_items_as(java.lang.Integer)&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Validate todo list application" name="As todoMVC user add 6 todo items" time="0.029">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+</error>
+  </testcase>
+  <testcase classname="Validate todo list application" name="As todoMVC user add 15 todo items" time="0.018">
+    <error message="The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+</error>
+    <system-out>
+@validateToDoAddCount
+Scenario Outline: As todoMVC user add 15 todo items           &amp;#27;[90m# src/test/resources/com/automatedtest/homePage.feature:49&amp;#27;[0m
+      &amp;#27;[31mjava.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+&amp;#27;[0m
+  &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI navigates to HomePage&amp;#27;[0m                               &amp;#27;[90m# com.singtel.steps.HomePageSteps.a_todoMVC_user_navigates_to_HomePage()&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI add &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m15&amp;#27;[0m&amp;#27;[36m todo items to list&amp;#27;[0m                            &amp;#27;[90m# com.singtel.steps.HomePageSteps.user_add_todo_items_to_list(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mtodo list is displayed with &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m15&amp;#27;[0m&amp;#27;[36m items&amp;#27;[0m                   &amp;#27;[90m# com.singtel.steps.HomePageSteps.search_bar_is_displayed_items_in_list(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click on All filter and validate count of items as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m15&amp;#27;[0m &amp;#27;[90m# com.singtel.steps.HomePageSteps.i_click_on_All_filter_and_validate_count_of_items_as(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click on Active and validate count of items as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m15&amp;#27;[0m     &amp;#27;[90m# com.singtel.steps.HomePageSteps.i_click_on_Active_and_validate_count_of_items_as(java.lang.Integer)&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Validate todo list application" name="As todoMVC user add 15 todo items" time="0.018">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+</error>
+  </testcase>
+  <testcase classname="Validate todo list application" name="As todoMVC user add 6 todo items and remove 3 todo items" time="0.029">
+    <error message="The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+</error>
+    <system-out>
+@validateTodoCount
+Scenario Outline: As todoMVC user add 6 todo items and remove 3 todo items &amp;#27;[90m# src/test/resources/com/automatedtest/homePage.feature:62&amp;#27;[0m
+      &amp;#27;[31mjava.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+&amp;#27;[0m
+  &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI navigates to HomePage&amp;#27;[0m                                            &amp;#27;[90m# com.singtel.steps.HomePageSteps.a_todoMVC_user_navigates_to_HomePage()&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI add &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m6&amp;#27;[0m&amp;#27;[36m todo items to list&amp;#27;[0m                                          &amp;#27;[90m# com.singtel.steps.HomePageSteps.user_add_todo_items_to_list(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI remove &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m3&amp;#27;[0m&amp;#27;[36m todo items to list&amp;#27;[0m                                        &amp;#27;[90m# com.singtel.steps.HomePageSteps.user_remove_todo_items_to_list(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mtodo list is displayed with &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m3&amp;#27;[0m&amp;#27;[36m items&amp;#27;[0m                                 &amp;#27;[90m# com.singtel.steps.HomePageSteps.search_bar_is_displayed_items_in_list(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click on All filter and validate count of items as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m3&amp;#27;[0m               &amp;#27;[90m# com.singtel.steps.HomePageSteps.i_click_on_All_filter_and_validate_count_of_items_as(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click on Active and validate count of items as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m3&amp;#27;[0m                   &amp;#27;[90m# com.singtel.steps.HomePageSteps.i_click_on_Active_and_validate_count_of_items_as(java.lang.Integer)&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Validate todo list application" name="As todoMVC user add 6 todo items and remove 3 todo items" time="0.029">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+</error>
+  </testcase>
+  <testcase classname="Validate todo list application" name="As todoMVC user add 15 todo items and remove 3 todo items" time="0.019">
+    <error message="The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+</error>
+    <system-out>
+@validateTodoCount
+Scenario Outline: As todoMVC user add 15 todo items and remove 3 todo items &amp;#27;[90m# src/test/resources/com/automatedtest/homePage.feature:63&amp;#27;[0m
+      &amp;#27;[31mjava.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+&amp;#27;[0m
+  &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI navigates to HomePage&amp;#27;[0m                                             &amp;#27;[90m# com.singtel.steps.HomePageSteps.a_todoMVC_user_navigates_to_HomePage()&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI add &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m15&amp;#27;[0m&amp;#27;[36m todo items to list&amp;#27;[0m                                          &amp;#27;[90m# com.singtel.steps.HomePageSteps.user_add_todo_items_to_list(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI remove &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m3&amp;#27;[0m&amp;#27;[36m todo items to list&amp;#27;[0m                                         &amp;#27;[90m# com.singtel.steps.HomePageSteps.user_remove_todo_items_to_list(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mtodo list is displayed with &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m12&amp;#27;[0m&amp;#27;[36m items&amp;#27;[0m                                 &amp;#27;[90m# com.singtel.steps.HomePageSteps.search_bar_is_displayed_items_in_list(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click on All filter and validate count of items as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m12&amp;#27;[0m               &amp;#27;[90m# com.singtel.steps.HomePageSteps.i_click_on_All_filter_and_validate_count_of_items_as(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click on Active and validate count of items as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m12&amp;#27;[0m                   &amp;#27;[90m# com.singtel.steps.HomePageSteps.i_click_on_Active_and_validate_count_of_items_as(java.lang.Integer)&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Validate todo list application" name="As todoMVC user add 15 todo items and remove 3 todo items" time="0.019">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+</error>
+  </testcase>
+  <testcase classname="Validate todo list application" name="As todoMVC user add 6 todo items , remove 3 todo items and mark completed 2 todoItems" time="0.015">
+    <error message="The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+</error>
+    <system-out>
+@validateTodoCountCompleted
+Scenario Outline: As todoMVC user add 6 todo items , remove 3 todo items and mark completed 2 todoItems &amp;#27;[90m# src/test/resources/com/automatedtest/homePage.feature:77&amp;#27;[0m
+      &amp;#27;[31mjava.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+&amp;#27;[0m
+  &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI navigates to HomePage&amp;#27;[0m                                                                         &amp;#27;[90m# com.singtel.steps.HomePageSteps.a_todoMVC_user_navigates_to_HomePage()&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI add &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m6&amp;#27;[0m&amp;#27;[36m todo items to list&amp;#27;[0m                                                                       &amp;#27;[90m# com.singtel.steps.HomePageSteps.user_add_todo_items_to_list(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI remove &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m3&amp;#27;[0m&amp;#27;[36m todo items to list&amp;#27;[0m                                                                     &amp;#27;[90m# com.singtel.steps.HomePageSteps.user_remove_todo_items_to_list(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI mark completed &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2&amp;#27;[0m&amp;#27;[36m todo items&amp;#27;[0m                                                                     &amp;#27;[90m# com.singtel.steps.HomePageSteps.i_mark_completed_todo_items(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mtodo list is displayed with &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m1&amp;#27;[0m&amp;#27;[36m items&amp;#27;[0m                                                              &amp;#27;[90m# com.singtel.steps.HomePageSteps.search_bar_is_displayed_items_in_list(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click on Active and validate count of items as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m1&amp;#27;[0m                                                &amp;#27;[90m# com.singtel.steps.HomePageSteps.i_click_on_Active_and_validate_count_of_items_as(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click on Completed and validate count of items as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2&amp;#27;[0m                                             &amp;#27;[90m# com.singtel.steps.HomePageSteps.i_click_on_Completed_and_validate_count_of_items_as(java.lang.Integer)&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Validate todo list application" name="As todoMVC user add 6 todo items , remove 3 todo items and mark completed 2 todoItems" time="0.015">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+</error>
+  </testcase>
+  <testcase classname="Validate todo list application" name="As todoMVC user add 15 todo items , remove 3 todo items and mark completed 2 todoItems" time="0.033">
+    <error message="The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+</error>
+    <system-out>
+@validateTodoCountCompleted
+Scenario Outline: As todoMVC user add 15 todo items , remove 3 todo items and mark completed 2 todoItems &amp;#27;[90m# src/test/resources/com/automatedtest/homePage.feature:78&amp;#27;[0m
+      &amp;#27;[31mjava.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+&amp;#27;[0m
+  &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI navigates to HomePage&amp;#27;[0m                                                                          &amp;#27;[90m# com.singtel.steps.HomePageSteps.a_todoMVC_user_navigates_to_HomePage()&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI add &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m15&amp;#27;[0m&amp;#27;[36m todo items to list&amp;#27;[0m                                                                       &amp;#27;[90m# com.singtel.steps.HomePageSteps.user_add_todo_items_to_list(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI remove &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m3&amp;#27;[0m&amp;#27;[36m todo items to list&amp;#27;[0m                                                                      &amp;#27;[90m# com.singtel.steps.HomePageSteps.user_remove_todo_items_to_list(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI mark completed &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2&amp;#27;[0m&amp;#27;[36m todo items&amp;#27;[0m                                                                      &amp;#27;[90m# com.singtel.steps.HomePageSteps.i_mark_completed_todo_items(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mtodo list is displayed with &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m10&amp;#27;[0m&amp;#27;[36m items&amp;#27;[0m                                                              &amp;#27;[90m# com.singtel.steps.HomePageSteps.search_bar_is_displayed_items_in_list(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click on Active and validate count of items as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m10&amp;#27;[0m                                                &amp;#27;[90m# com.singtel.steps.HomePageSteps.i_click_on_Active_and_validate_count_of_items_as(java.lang.Integer)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click on Completed and validate count of items as &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m2&amp;#27;[0m                                              &amp;#27;[90m# com.singtel.steps.HomePageSteps.i_click_on_Completed_and_validate_count_of_items_as(java.lang.Integer)&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Validate todo list application" name="As todoMVC user add 15 todo items , remove 3 todo items and mark completed 2 todoItems" time="0.033">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+</error>
+  </testcase>
+  <testcase classname="Validate todo list application" name="As todoMVC user change existing todo items" time="0.011">
+    <error message="The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+</error>
+    <system-out>
+@validateTodoEdit
+Scenario: As todoMVC user change existing todo items &amp;#27;[90m# src/test/resources/com/automatedtest/homePage.feature:81&amp;#27;[0m
+      &amp;#27;[31mjava.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+&amp;#27;[0m
+  &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI navigates to HomePage&amp;#27;[0m                      &amp;#27;[90m# com.singtel.steps.HomePageSteps.a_todoMVC_user_navigates_to_HomePage()&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI add todo items to list&amp;#27;[0m                      &amp;#27;[90m# com.singtel.steps.HomePageSteps.user_add_todo_items_to_list(io.cucumber.datatable.DataTable)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI edit existing todo items to list&amp;#27;[0m             &amp;#27;[90m# com.singtel.steps.HomePageSteps.user_edit_todo_items_to_list(io.cucumber.datatable.DataTable)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mtodo list is displayed with following&amp;#27;[0m         &amp;#27;[90m# com.singtel.steps.HomePageSteps.todo_list_is_displayed_with_following(io.cucumber.datatable.DataTable)&amp;#27;[0m
+      &amp;#27;[31mjava.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+&amp;#27;[0m
+</system-out>
+  </testcase>
+  <testcase classname="Validate todo list application" name="As todoMVC user change existing todo items" time="0.011">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+</error>
+  </testcase>
+</testsuite>

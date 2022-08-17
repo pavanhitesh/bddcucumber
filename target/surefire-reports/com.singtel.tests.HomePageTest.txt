@@ -1,0 +1,184 @@
+-------------------------------------------------------------------------------
+Test set: com.singtel.tests.HomePageTest
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 0, Errors: 20, Skipped: 0, Time elapsed: 1.627 sec <<< FAILURE!
+As toDoMVC user able to add to item  to the list(Validate todo list application)  Time elapsed: 0.627 sec  <<< ERROR!
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+
+As toDoMVC user able to add to item  to the list(Validate todo list application)  Time elapsed: 0.629 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+
+As toDoMVC user able to add and remove to items to the list(Validate todo list application)  Time elapsed: 0.025 sec  <<< ERROR!
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+
+As toDoMVC user able to add and remove to items to the list(Validate todo list application)  Time elapsed: 0.025 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+
+As toDoMVC user able to add to items to the list and mark completed(Validate todo list application)  Time elapsed: 0.034 sec  <<< ERROR!
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+
+As toDoMVC user able to add to items to the list and mark completed(Validate todo list application)  Time elapsed: 0.034 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+
+As todoMVC user add 6 todo items(Validate todo list application)  Time elapsed: 0.029 sec  <<< ERROR!
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+
+As todoMVC user add 6 todo items(Validate todo list application)  Time elapsed: 0.029 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+
+As todoMVC user add 15 todo items(Validate todo list application)  Time elapsed: 0.018 sec  <<< ERROR!
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+
+As todoMVC user add 15 todo items(Validate todo list application)  Time elapsed: 0.018 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+
+As todoMVC user add 6 todo items and remove 3 todo items(Validate todo list application)  Time elapsed: 0.029 sec  <<< ERROR!
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+
+As todoMVC user add 6 todo items and remove 3 todo items(Validate todo list application)  Time elapsed: 0.029 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+
+As todoMVC user add 15 todo items and remove 3 todo items(Validate todo list application)  Time elapsed: 0.019 sec  <<< ERROR!
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+
+As todoMVC user add 15 todo items and remove 3 todo items(Validate todo list application)  Time elapsed: 0.019 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+
+As todoMVC user add 6 todo items , remove 3 todo items and mark completed 2 todoItems(Validate todo list application)  Time elapsed: 0.015 sec  <<< ERROR!
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+
+As todoMVC user add 6 todo items , remove 3 todo items and mark completed 2 todoItems(Validate todo list application)  Time elapsed: 0.015 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+
+As todoMVC user add 15 todo items , remove 3 todo items and mark completed 2 todoItems(Validate todo list application)  Time elapsed: 0.033 sec  <<< ERROR!
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+
+As todoMVC user add 15 todo items , remove 3 todo items and mark completed 2 todoItems(Validate todo list application)  Time elapsed: 0.033 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+
+As todoMVC user change existing todo items(Validate todo list application)  Time elapsed: 0.011 sec  <<< ERROR!
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\hites\eclipse-workspace\todoList\src\test\resources\executables\chromedriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+	at com.singtel.base.BaseWebDriver.setWebDriver(BaseWebDriver.java:29)
+	at com.singtel.hooks.Hooks.setupWebDriver(Hooks.java:15)
+
+As todoMVC user change existing todo items(Validate todo list application)  Time elapsed: 0.011 sec  <<< ERROR!
+java.lang.NullPointerException
+	at com.singtel.hooks.TearDown.saveScreenshotsForScenario(TearDown.java:31)
+	at com.singtel.hooks.TearDown.screenShot(TearDown.java:22)
+
