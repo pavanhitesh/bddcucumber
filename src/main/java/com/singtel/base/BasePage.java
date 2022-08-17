@@ -3,6 +3,7 @@ package com.singtel.base;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -18,11 +19,13 @@ public class BasePage {
 	protected WebDriver driver;
 	protected JavascriptExecutor javascriptExecutor;
 	protected Actions actions;
+	protected Properties properties;
 
 	public BasePage() {
 		this.driver = BaseWebDriver.driver;
 		this.javascriptExecutor = BaseWebDriver.javascriptExecutor;
 		this.actions = BaseWebDriver.actions;
+		this.properties = BaseWebDriver.properties;
 	}
 
 

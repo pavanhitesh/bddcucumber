@@ -118,23 +118,30 @@ public class HomePageSteps {
 	public void i_mark_completed_todo_items(Integer int1) {
 		this.homePage.markComplete(int1);
 	}
-	
+
 	@Then("I click on All filter and validate count of items as {int}")
 	public void i_click_on_All_filter_and_validate_count_of_items_as(Integer expectedCountOfItems) {
-	    this.homePage.clickAllFilter();
-	    Assert.assertEquals(expectedCountOfItems, this.homePage.getAllItemCount());
+		this.homePage.clickAllFilter();
+		Assert.assertEquals(expectedCountOfItems, this.homePage.getAllItemCount());
 	}
 
 	@Then("I click on Active and validate count of items as {int}")
 	public void i_click_on_Active_and_validate_count_of_items_as(Integer expectedCountOfItems) {
-		 this.homePage.clickActiveFilter();
+		this.homePage.clickActiveFilter();
 		Assert.assertEquals(expectedCountOfItems, this.homePage.getAllItemCount());
 	}
 
 	@Then("I click on Completed and validate count of items as {int}")
 	public void i_click_on_Completed_and_validate_count_of_items_as(Integer expectedCountOfItems) {
-		 this.homePage.clickCompletedFilter();
+		this.homePage.clickCompletedFilter();
 		Assert.assertEquals(expectedCountOfItems, this.homePage.getAllItemCount());
+	}
+
+
+	@When("I click on the clear completed filter")
+	public void i_click_on_the_clear_completed_filter() {
+		this.homePage.clickClearCompletedFilter();
+		
 	}
 
 

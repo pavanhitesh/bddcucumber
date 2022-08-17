@@ -77,6 +77,22 @@ Feature: Validate todo list application
       |   6 |      3 |         2 |     1 |
       |  15 |      3 |         2 |    10 |
 
+  @validateClearCompleted
+  Scenario Outline: As todoMVC Clear Completed functionality
+    Given I navigates to HomePage
+    When I add <add> todo items to list
+    And I mark completed <completed> todo items
+    And I click on the clear completed filter
+    Then todo list is displayed with <final> items
+    And I click on All filter and validate count of items as <final>
+    And I click on Active and validate count of items as <final>
+    And I click on Completed and validate count of items as 0
+
+    Examples: 
+      | add | completed | final |
+      |   6 |         2 |     4 |
+      |  15 |         2 |    13 |
+
   @validateTodoEdit
   Scenario: As todoMVC user change existing todo items
     Given I navigates to HomePage

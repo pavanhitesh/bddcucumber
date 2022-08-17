@@ -15,8 +15,6 @@ import java.util.stream.Collectors;
 
 public class HomePage extends BasePage {
 
-	private static final String HOME_PAGE_URL = "http://todomvc.com/examples/vue/";
-
 	@FindBy(xpath = "//li[@class='todo']")
 	private List<WebElement> todoRows;
 
@@ -60,7 +58,7 @@ public class HomePage extends BasePage {
 	}
 
 	public void goToHomePage() {
-		driver.get(HOME_PAGE_URL);
+		driver.get(properties.getProperty("baseURL"));
 		waitForElementToBeDisplayed(5, this.searchInput, "searchBox");
 	}
 
@@ -140,6 +138,12 @@ public class HomePage extends BasePage {
 		waitForLoading(1);
 	}
 
+	public void clickClearCompletedFilter() {
+		clearCompleted.click();
+		waitForLoading(1);
+	}
+
+	
 	public void checkDoneItems(String doneItemName) {
 		WebElement checkbox = driver.findElement(By.xpath(String.format("//li[@class='todo']//label[text()='%s']//parent::div/input[@type='checkbox']", doneItemName)));
 		javascriptExecutor.executeScript("arguments[0].click()", checkbox);
