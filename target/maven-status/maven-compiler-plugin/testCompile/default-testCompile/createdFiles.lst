@@ -1,5 +1,0 @@
-com\singtel\hooks\Hooks.class
-com\singtel\pages\HomePage.class
-com\singtel\steps\HomePageSteps.class
-com\singtel\tests\HomePageTest.class
-com\singtel\hooks\TearDown.class
